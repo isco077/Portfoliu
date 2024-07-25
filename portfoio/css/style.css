@@ -1,0 +1,807 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.body-scroll-stop {
+    overflow: hidden;
+}
+
+.body-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    
+}
+.mobile-home-wrap {
+    background-color: rgba(17, 24, 39, 0.1);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+}
+
+.mobile-home-container {
+    padding: 16px;
+}
+
+.mobile-home {
+    width: 320px;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: -320px;
+    z-index: 3;
+    box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.15);
+}
+
+.mobile-home.open {
+    right: 0;
+}
+
+.mobile-home-logo {
+    width: 77px;
+    height: 32px;
+}
+
+.mobile-home-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.xmark {
+    cursor: pointer;
+    margin: 6px;
+}
+
+.mobile-home-nav-list {
+    padding: 16px ;
+    border-top: 1px solid rgba(243, 244, 246, 1);
+    border-bottom: 1px solid rgba(243, 244, 246, 1);
+}
+
+.mobile-home-link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(75, 85, 99, 1);
+}
+
+.mobile-home-list {
+    margin-bottom: 16px;
+}
+
+.mobile-home-list:last-child {
+    margin: 0;
+}
+
+.swithc-theme-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.mobile-download-cv-btn {
+    width: 100%;
+    background-color: rgba(17, 24, 39, 1);
+    padding: 6px 0;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 12px;
+}
+
+.switch-theme {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(75, 85, 99, 1);
+}
+
+
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+.none {
+    display: none;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 44px;
+    overflow-x: hidden;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 68px;
+    align-items: center;
+}
+
+.menu-wrap {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+
+}
+
+.nav-link {
+    color: rgba(75, 85, 99, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.download-sv-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.vertical-line {
+    margin-left: 24px;
+    margin-right: 32px;
+}
+
+.download-sv-btn {
+    padding: 6px 16px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: white;
+    background-color: rgba(17, 24, 39, 1);
+    border-radius: 18px;
+    margin-left: 24px;
+}
+.header-content-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 106px;
+    padding-bottom: 96px;
+}
+
+.header-heading {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    color: rgba(17, 24, 39, 1);
+}
+
+.header-info {
+    max-width: 768px;
+    margin-top: 6px;
+    margin-bottom: 48px;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(75, 85, 99, 1);
+}
+
+.location-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.location-span {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(75, 85, 99, 1);
+    margin-left: 8px;
+}
+
+.green-point-wrap {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lable-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.lable-span {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 8px;
+    color: rgba(75, 85, 99, 1);
+}
+
+.header-icons-wrap {
+    display: flex;
+    gap: 21px;
+    margin-top: 54px;
+}
+
+.header-imges-wrap {
+    display: flex;
+    align-items: end;
+    position: relative;
+}
+
+.header-imges-bg {
+    width: 280px;
+    height: 320px;
+}
+
+.header-imges {
+    width: 280px;
+    height: 320px;
+    z-index: 1;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+}
+
+/* ABOUT ME SECTION */
+
+.about-me-section {
+    background-color: rgba(249, 250, 251, 1);
+    padding-top: 96px;
+}
+
+.about-me-span-wrap {
+    text-align: center;
+}
+
+.about-me-span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 4px 20px;
+    background-color: rgba(229, 231, 235, 1);
+    border-radius: 12px;
+}
+
+.about-me-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+    padding-bottom: 96px;
+}
+
+.about-me-text-wrap {
+    width: 584px;
+    height: 694px;
+}
+
+.curious-about-me {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+    color: rgba(17, 24, 39, 1);
+}
+
+.about-me-p {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(75, 85, 99, 1);
+    margin-top: 16px;
+}
+
+.about-me-p-link {
+    color: rgba(75, 85, 99, 1);
+}
+
+.about-me-list-wrap {
+    display: flex;
+    gap: 50px;
+    margin-top: 16px;
+}
+
+.about-me-list {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(75, 85, 99, 1);
+}
+
+.about-me-list li {
+    display: flex;
+    align-items: center;
+}
+
+.about-me-list li:before {
+    content: "";
+    display: inline-block;
+    width: 5px; 
+    height: 5px; 
+    border-radius: 50%;
+    background-color:rgba(75, 85, 99, 1);
+    margin-right: 10px; 
+    align-items: center;
+}
+
+.about-me-img-wrap {
+    position: relative;
+    margin-top: 40px;
+}
+
+.about-me-img {
+    position: absolute;
+    left: 40px;
+    bottom: 212px;
+}
+/* THE SKILL */
+
+.skillses-section {
+    padding: 96px 0;
+}
+
+.the-skillses-p {
+    font-size: 20px;
+    line-height: 28px;
+    color: rgba(75, 85, 99, 1);
+    margin-top: 16px;
+}
+
+
+.skillses-wrap {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); 
+    grid-gap: 48px; 
+    margin-top: 48px;
+}
+
+.skill {
+    text-align: center;
+    padding: 50px;
+}
+
+.skill-name {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 6px;
+    color: rgba(75, 85, 99, 1);
+}
+
+/* EXPERIENCE SECTION */
+
+.experience-section {
+    padding: 96px 0;
+    background-color: rgba(249, 250, 251, 1);
+}
+
+.experience-card-wrap-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.experience-card-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-card {
+    display: flex;
+    justify-content: space-between;
+    width: 896px;
+    padding: 32px;
+    background-color: white;
+    border-radius: 12px;
+    margin-top: 48px;
+    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+}
+
+.experience-card-list-wrap {
+    width: 384px;
+}
+
+.experience-card-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: rgba(17, 24, 39, 1);
+    margin-bottom: 16px;
+}
+
+.experience-card-list li {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(75, 85, 99, 1);
+    margin-bottom: 4px;
+}
+
+.list-el:before {
+    content: "";
+    display: inline-block;
+    width: 5px; 
+    height: 5px; 
+    border-radius: 50%;
+    background-color:rgba(75, 85, 99, 1);
+    margin-right: 10px; 
+    margin-bottom: 3px;
+    align-items: center;
+}
+
+.experience-card-date {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(55, 65, 81, 1);
+}
+
+/* WORK QISMI*/
+
+.work-section {
+    padding: 96px 0;
+}
+
+.work-card {
+    display: inline-flex;
+    margin-top: 48px;
+}
+
+.work-card-img-section {
+    width: 576px;
+    height: 480px;
+    background-color: rgba(243, 244, 246, 1);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding: 48px;
+}
+
+.nd-work-img-card {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.word-card-img {
+    box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.04);
+}
+.work-card-info-section {
+    width: 576px;
+    height: 480px;
+    padding: 48px;
+}
+
+.work-card-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: rgba(17, 24, 39, 1);
+    margin-bottom: 24px;
+}
+
+.work-card-info {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(75, 85, 99, 1);
+    margin-bottom: 24px;
+}
+
+.work-card-skill {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 4px 20px;
+    background-color: rgba(229, 231, 235, 1);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: rgba(75, 85, 99, 1);
+    border-radius: 12px;
+}
+
+.work-card-btn {
+    margin-top: 22px;
+}
+
+.work-card {
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+    border-radius: 12px;
+}
+
+.work-card-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.work-card-wrap-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+/* TESTIMONIALS SECTION */
+
+.testimonials-section {
+    padding: 96px 0;
+    background-color: rgba(249, 250, 251, 1);
+}
+
+.testimonials-card-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+.testimonials-card {
+    width:373.33px;
+    height: 428px;
+    padding: 48px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+}
+
+.avatar-icon-wrap {
+    text-align: center;
+}
+
+.testimonials-card-info {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(75, 85, 99, 1);
+    margin-top: 24px;
+}
+
+.testimonials-card-name-wrap {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.testimonials-card-name {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: rgba(17, 24, 39, 1);
+}
+
+.testimonials-card-job-title {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(75, 85, 99, 1);
+    margin-top: 4px;
+}
+
+/* FOOTER */
+
+.footer-container {
+    padding-top: 96px;
+    padding-bottom: 102px;
+
+}
+
+.light__mode-btn{
+    background: black;
+}
+
+/* TELEFONA MOSLASHTRISH*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header-content-wrap, .about-me-wrap, .experience-card-wrap, .work-card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.header-imges, .about-me-img, .work-card-img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* TELEFON uchun  */
+
+@media (max-width: 768px) {
+    .header-content-wrap, .about-me-wrap, .experience-card-wrap, .work-card-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .hamburger-btn {
+        display: block;
+    }
+
+    .mobile-home-wrap {
+        display: block;
+    }
+
+    .work-card-reverse .work-card-info-section, .work-card-reverse .work-card-img-section {
+        order: 0;
+    }
+}
+
+/*  2qismi */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .header-content, .about-me-text-wrap, .experience-card-list-wrap, .work-card-info-section {
+        text-align: center;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-content-wrap, .about-me-wrap, .experience-card-wrap, .work-card-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-card, .work-card {
+        margin-bottom: 20px;
+    }
+
+    .experience-card-list-wrap {
+        padding: 10px;
+    }
+
+    .header-imges-bg {
+        display: none;
+    }
+}
+
+/* 3 QISMI*/
+@media (max-width: 768px) {
+    .experience-card {
+        flex-direction: column;
+    }
+
+    .upwork-img-wrap {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .experience-card-date {
+        text-align: center;
+    }
+}
+
+/* 4 QISMI*/
+@media (max-width: 768px) {
+    .work-card {
+        flex-direction: column;
+    }
+
+    .work-card-reverse {
+        flex-direction: column;
+    }
+
+    .work-card-img-section {
+        margin-right: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .work-card-info-section {
+        text-align: center;
+    }
+}
+
+.email-address-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    color: blue;
+}
+
+.email-icon {
+    margin-right: 20px;
+}
+
+.copy-btn {
+    margin-left: 26px;
+}
+
+.email-address {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: rgba(17, 24, 39, 1);
+}
+
+.phone-address-wrap {
+    margin-top: 20px;
+}
+
+.footer-social-icons-wrap-wrap {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-social-icons-title {
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(75, 85, 99, 1);
+}
+
+.footer-social-icons-wrap {
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+
+.footer-copyright {
+    padding: 24px 0;
+    background-color: rgba(249, 250, 251, 1);
+}
+
+.copyright-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:blue;
+}
+
+.copyright-icon {
+    margin-right: 8px;
+}
+
+.copyright-text {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(75, 85, 99, 1);
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.list-el {
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+.mobile-card-date {
+    display: none;
+}
+
+.experience-card-wrap-wrap,
+.testimonials-card-wrap {
+    overflow: hidden;
+}
+.container{
+    box-sizing: border-box;
+   
+}
+
+/* 5 Qismi*/
+
+@media (max-width: 768px) {
+    .testimonials-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
